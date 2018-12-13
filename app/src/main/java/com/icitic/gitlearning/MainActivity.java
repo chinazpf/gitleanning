@@ -12,6 +12,8 @@ import android.widget.LinearLayout;
  */
 public class MainActivity extends AppCompatActivity {
 
+    private Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +27,13 @@ public class MainActivity extends AppCompatActivity {
         layoutParams.width = LinearLayout.LayoutParams.MATCH_PARENT;
         layoutParams.topMargin = 40;
         view.setLayoutParams(layoutParams);
-        Button btn = findViewById(R.id.btn);
+        btn = findViewById(R.id.btn);
         btn.setText("MainActivity");
+        initData();
+    }
+
+    private void initData() {
+        btn.setText("i am MainActivity");
     }
 
     public void goSecondActivity(View view) {
