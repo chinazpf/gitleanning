@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         View view = new View(this);
-        view.setBackgroundResource(R.color.colorAccent);
+        view.setBackgroundResource(R.color.colorPrimaryDark);
         Button btn = findViewById(R.id.btn);
         btn.setText("MainActivity");
     }
