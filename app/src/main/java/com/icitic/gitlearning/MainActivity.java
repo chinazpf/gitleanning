@@ -21,8 +21,9 @@ public class MainActivity extends AppCompatActivity {
         llContent.addView(view);
         view.setBackgroundResource(R.color.colorPrimary);
         LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) view.getLayoutParams();
-        layoutParams.height = 45;
-        layoutParams.width = 45;
+        layoutParams.height = 90;
+        layoutParams.width = LinearLayout.LayoutParams.MATCH_PARENT;
+        layoutParams.topMargin = 40;
         view.setLayoutParams(layoutParams);
         Button btn = findViewById(R.id.btn);
         btn.setText("MainActivity");
